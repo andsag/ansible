@@ -1,0 +1,13 @@
+---
+- name: Test task
+  hosts: all
+
+  tasks:
+
+  - name: Hello World!
+    shell: echo "Hi! Tower is working!"
+
+  - name: Create Folder
+    file:
+      path: ~/test
+      state: directory
